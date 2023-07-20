@@ -1,0 +1,142 @@
+.listing {
+    display: flex;
+    color: white;
+    align-items: center;
+    padding: 4rem 4rem;
+    background: var(--color-primary);
+    border-radius: var(--border-radius-md);
+}
+
+.listing__logo {
+    position: relative;
+    width: 10rem;
+    height: 10rem;
+    margin-right: 2.5rem;
+    object-fit: contain;
+    border-radius: 10rem;
+    background: var(--color-secondary);
+}
+
+.listing__logo > i {
+    position: absolute;
+    font-size: 5rem;
+    color: var(--color-light-gray);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.listing__info {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.listing__info--left,
+.listing__info--right {
+    display: flex;
+    flex-direction: column;
+}
+
+.listing__info--left {
+    gap: 1.5rem;
+}
+
+.listing__info--right {
+    gap: 1.5rem;
+    align-items: end;
+    margin-left: auto;
+}
+
+.listing__title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: inherit;
+}
+
+.listing__company {
+    font-size: 1.8rem;
+    color: var(--color-secondary);
+}
+
+.listing__salary,
+.listing__location,
+.listing__date {
+    color: inherit;
+}
+
+.listing__salary > i,
+.listing__location > i,
+.listing__date > i {
+    font-size: 2rem;
+    color: var(--color-secondary);
+}
+
+.listing__location {
+    margin-right: 1rem;
+}
+
+.listing__tags {
+    display: block;
+    text-align: end;
+}
+
+.listing__tags > span {
+    padding: 0.25rem 1rem;
+    border: 1px solid var(--color-secondary);
+    border-radius: 10rem;
+}
+
+.listing__button {
+    align-self: center;
+}
+
+
+@media (max-width: 64em) {
+    .listing,
+    .listing__info {
+        flex-direction: column;
+    }
+
+    .listing__info,
+    .listing__info--left,
+    .listing__info--right {
+        margin: 0;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .listing__info--left {
+        margin-bottom: 2rem;
+    }
+
+    .listing__logo {
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+
+    .listing__title,
+    .listing__company{
+        text-align: center;
+    }
+
+    .listing__salary {
+        order: 1;
+    }
+
+    .listing__location,
+    .listing__date {
+        display: block;
+        text-align: center;
+    }
+
+    .listing__location {
+        margin-bottom: 1rem
+    }
+
+    .listing__tags {
+        order: 3;
+        margin-top: 2rem;
+    }
+}

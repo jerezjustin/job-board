@@ -1,1 +1,9 @@
 @import "./abstracts/base.css";
+
+@import "./components/button.css";
+@import "./components/footer.css";
+@import "./components/input.css";
+@import "./components/navigation.css";
+@import "components/listing.css";
+
+@import "./pages/home.css";

@@ -1,12 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
 
-:root {
-    --color-primary: #8FC0A9;
-    --color-secondary: #FAF3DD;
-    --color-text: #979797;
-    --color-light-gray: #C6C6C6;
-}
-
 *,
 *::before,
 *::after {
@@ -15,9 +8,21 @@
     box-sizing: border-box;
 }
 
+:root {
+    --border-radius-md: 6px;
+
+    --max-width: 1440px;
+    --color-primary: #8FC0A9;
+    --color-secondary: #FAF3DD;
+
+    --color-light-gray: #a4a4a4;
+    --color-normal-gray: #717171;
+    --color-dark-gray: #343A40;
+}
+
 html {
     font-size: 62.5%;
-    color: var(--color-text);
+    color: var(--color-normal-gray);
 }
 
 body {

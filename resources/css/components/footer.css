@@ -1,0 +1,27 @@
+.footer {
+    color: white;
+    max-width: var(--max-width);
+
+    text-align: center;
+    padding: 2rem 3rem;
+    background-color: var(--color-primary);
+    border-radius: var(--border-radius-md);
+    margin: 0 auto 3rem auto;
+}
+
+.footer > copyright {
+    width: 100%;
+    font-size: 1.8rem;
+}
+
+.footer > copyright > a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color .3s ease-in-out;
+}
+
+.footer > copyright > a:hover {
+    color: var(--color-secondary);
+}
+
