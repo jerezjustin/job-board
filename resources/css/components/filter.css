@@ -1,0 +1,12 @@
+.filter {
+    display: flex;
+    padding: 1rem 2rem;
+    gap: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: var(--border-radius-md);
+    background-color: var(--color-primary);
+}
+
+.filter > button {
+    margin-left: auto;
+}

@@ -1,5 +1,5 @@
 <nav class="navbar">
-    <a class="navbar__logo" href="">Job Board</a>
+    <a class="navbar__logo" href="{{ route('home') }}">Job Board</a>
 
     <div class="navbar__links">
         <a class="navbar__link" href="">Log In</a>

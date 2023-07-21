@@ -1,9 +1,11 @@
 @import "./abstracts/base.css";
 
 @import "./components/button.css";
+@import "./components/filter.css";
 @import "./components/footer.css";
 @import "./components/input.css";
+@import "./components/listing.css";
 @import "./components/navigation.css";
-@import "components/listing.css";
+@import "./components/pagination.css";
 
 @import "./pages/home.css";

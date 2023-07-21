@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
 
         $tags = Tag::factory(5)->create();
 
-        Listing::factory(5)->create()->each(
+        Listing::factory(25)->create()->each(
             function (Listing $listing) use ($tags): void {
                 $tagsCount = random_int(1, 3);
 

@@ -9,10 +9,10 @@
                 ex ea commodo consequat.
             </p>
 
-            <div class="header__search-bar">
-                <input class="input" type="text" placeholder="{{ __('Job Title') }}">
+            <form class="header__search-bar" action="{{ route('listings.index') }}" method="GET">
+                <input class="input" name="title" type="text" placeholder="{{ __('Job Title') }}">
                 <button class="button button">Search</button>
-            </div>
+            </form>
         </div>
 
         <div class="header__image">
@@ -27,6 +27,6 @@
             <x-listing :listing="$listing"/>
         @endforeach
 
-        <a class="button listing__button" href="">See All</a>
+        <a class="button listing__button" href="{{ route('listings.index') }}">See All</a>
     </section>
 </x-layout>
