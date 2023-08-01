@@ -12,18 +12,27 @@
     width: 10rem;
     height: 10rem;
     margin-right: 2.5rem;
-    object-fit: contain;
     border-radius: 10rem;
     background: var(--color-secondary);
 }
 
-.listing__logo > i {
+.listing__logo > i,
+.listing__logo > img {
     position: absolute;
-    font-size: 5rem;
-    color: var(--color-light-gray);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.listing__logo > img {
+    width: 7rem;
+    height: 7rem;
+    object-fit: cover;
+}
+
+.listing__logo > i {
+    font-size: 5rem;
+    color: var(--color-light-gray);
 }
 
 .listing__info {

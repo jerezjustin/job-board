@@ -19,4 +19,4 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::resource('listings', ListingController::class)->only('index');
+Route::resource('listings', ListingController::class)->only('index', 'create', 'store');

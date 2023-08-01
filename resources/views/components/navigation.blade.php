@@ -2,11 +2,11 @@
     <a class="navbar__logo" href="{{ route('home') }}">Job Board</a>
 
     <div class="navbar__links">
-        <a class="navbar__link" href="">Log In</a>
+        @guest()
+            <a class="navbar__link" href="">Log In</a>
+        @endguest
 
-        <a class="navbar__link" href="">Register</a>
-
-        <a class="button" href="">
+        <a class="button" href="{{ route('listings.create') }}">
             Post a job
             <i class="fa-solid fa-arrow-right"></i>
         </a>

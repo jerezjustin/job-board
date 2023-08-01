@@ -30,3 +30,15 @@ body {
     font-weight: normal;
     font-size: 1.6rem;
 }
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+.container > h1 {
+    color: var(--color-primary);
+    text-align: center;
+    margin-bottom: 6rem;
+}

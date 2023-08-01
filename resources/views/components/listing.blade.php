@@ -1,13 +1,13 @@
 @props(['listing'])
 
 <div class="listing">
-    @if($listing->logo)
-        <img class="listing__logo" src="" alt="">
-    @else
-        <div class="listing__logo">
+    <div class="listing__logo">
+        @if($listing->logo)
+            <img src="{{ '/storage/' . $listing->logo }}" alt="">
+        @else
             <i class="fa-regular fa-building"></i>
-        </div>
-    @endif
+        @endif
+    </div>
 
     <div class="listing__info">
         <div class="listing__info--left">

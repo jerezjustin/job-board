@@ -20,7 +20,7 @@ return new class () extends Migration {
             $table->string('location');
             $table->string('contract_type');
             $table->text('content');
-            $table->boolean('is_active');
+            $table->boolean('is_active')->default(true);
             $table->string('apply_link');
             $table->string('logo')->nullable();
             $table->integer('salary')->nullable();
